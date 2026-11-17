@@ -33,10 +33,10 @@
         <a href="#top" data-i18n="nav.home">Home</a>
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#explore" data-i18n="nav.everything">Everything you need</a>
-        <a href="#roadmap" data-i18n="nav.roadmap">The Roadmap</a>
         <div class="nav-drop" id="navDrop">
           <button class="nav-drop-btn" type="button" aria-expanded="false" aria-controls="navDropMenu"><span data-i18n="nav.explore">Explore</span><svg class="chev" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></button>
           <div class="nav-drop-menu" id="navDropMenu">
+            <a href="#roadmap" data-modal="roadmapModal"><span class="nd-icon"><svg viewBox="0 0 24 24"><path d="M14.5 4 9 2 3 4.3v17.4l6-2.3 5.5 2 6.5-2.3V1.7zM10 4.7l4 1.5v13.1l-4-1.5z"/></svg></span><span class="nd-text"><b data-i18n="nav.roadmap">The Roadmap</b><small data-i18n="nd.road">Step-by-step for buyers &amp; sellers</small></span></a>
             <a href="#services" data-modal="servicesModal"><span class="nd-icon"><svg viewBox="0 0 24 24"><path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/></svg></span><span class="nd-text"><b data-i18n="nav.services">Services</b><small data-i18n="nd.svc">Buy, sell, relocate, invest</small></span></a>
             <a href="#areas" data-modal="areasModal"><span class="nd-icon"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span><span class="nd-text"><b data-i18n="nav.areas">Areas</b><small data-i18n="nd.areas">Interactive map of her towns</small></span></a>
             <a href="#calculator" data-modal="calcModal"><span class="nd-icon"><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v4h10V4zm1 7v2h2v-2zm4 0v2h2v-2zm4 0v6h2v-6zm-8 4v2h2v-2zm4 0v2h2v-2z"/></svg></span><span class="nd-text"><b data-i18n="nav.calc">Mortgage Calculator</b><small data-i18n="nd.calc">Payments, loans &amp; NJ closing costs</small></span></a>
@@ -128,43 +128,17 @@
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="section about" id="about">
-      <div class="container about-grid">
-        <div class="about-visual reveal">
-          <div class="about-img">
-            <video src="assets/videos/property-1-web.mp4" poster="assets/videos/property-1-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
-          </div>
-          <div class="about-float float-1">
-            <strong data-count="homesSold">0</strong><span>+</span>
-            <small data-i18n="about.f1">families helped home</small>
-          </div>
-          <div class="about-float float-2">
-            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-            <div><strong>Montclair, NJ</strong><small data-i18n="about.f2">Essex County expert</small></div>
-          </div>
-        </div>
-
-        <div class="about-copy reveal" style="--d:.1s">
-          <span class="kicker" data-i18n="about.kicker">Meet Pamela</span>
-          <h2 data-i18n="about.title">Real estate is personal. <em>So is her service.</em></h2>
-          <p data-i18n="about.p1">Buying or selling a home is one of the biggest decisions you will ever make. Pamela treats it that way. She answers her phone, explains every step in plain language (in English or Spanish), and negotiates like the money is her own.</p>
-          <p data-i18n="about.p2">From first-time buyers in East Orange to families moving up to Montclair and investors eyeing Newark multi-families, Pamela guides her clients across North Jersey. She covers the whole deal: pricing strategy, staging tips, lender, inspector, and attorney introductions, and a smooth closing day.</p>
-
-          <ul class="checklist">
-            <li data-i18n="about.c1">Fast replies by call, text, or WhatsApp</li>
-            <li data-i18n="about.c2">Local market data before you make any offer</li>
-            <li data-i18n="about.c3">A trusted network of lenders, inspectors, and contractors</li>
-            <li data-i18n="about.c4">Fluent in English and Spanish, so nothing gets lost in translation</li>
-          </ul>
-
-          <div class="tags" id="specialtyTags"></div>
-
-          <div class="signature">
-            <span class="sig">Pamela Espinal</span>
-            <small data-fill="title"></small>
-          </div>
-        </div>
+    <!-- ============ ABOUT (opens the Meet Pamela popup) ============ -->
+    <section class="meet-wrap" id="about">
+      <div class="container">
+        <a href="#about" class="meet-launch reveal" data-modal="aboutModal">
+          <span class="meet-avatar"><img data-photo alt="" onerror="this.remove()"><b>PE</b></span>
+          <span class="meet-text">
+            <small data-i18n="nav.about">About</small>
+            <strong data-i18n="about.title">Real estate is personal. <em>So is her service.</em></strong>
+          </span>
+          <span class="meet-btn"><span data-i18n="about.kicker">Meet Pamela</span><i aria-hidden="true">+</i></span>
+        </a>
       </div>
     </section>
 
@@ -221,33 +195,6 @@
             <span class="launch-cta"><span data-i18n="ex.faqOpen">Read the FAQ</span> <i>→</i></span>
           </a>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ PROCESS ============ -->
-    <section class="section process" id="roadmap">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker" data-i18n="proc.kicker">The roadmap</span>
-          <h2 data-i18n="proc.title">Simple steps. <em>Zero guesswork.</em></h2>
-          <div class="seg" id="procToggle">
-            <button class="active" data-proc="buy" data-i18n="proc.buyers">For Buyers</button>
-            <button data-proc="sell" data-i18n="proc.sellers">For Sellers</button>
-          </div>
-        </div>
-
-        <ol class="steps" data-proc-list="buy">
-          <li class="reveal"><span>01</span><h4 data-i18n="pb.1t">Consultation</h4><p data-i18n="pb.1p">We talk goals, must-haves, neighborhoods, and timeline. It's free and there's no pressure.</p></li>
-          <li class="reveal" style="--d:.08s"><span>02</span><h4 data-i18n="pb.2t">Get Pre-Approved</h4><p data-i18n="pb.2p">Pamela connects you with trusted lenders and helps you compare FHA, VA, conventional, and more.</p></li>
-          <li class="reveal" style="--d:.16s"><span>03</span><h4 data-i18n="pb.3t">Tour & Offer</h4><p data-i18n="pb.3p">Curated showings, local sales data, and a winning offer strategy.</p></li>
-          <li class="reveal" style="--d:.24s"><span>04</span><h4 data-i18n="pb.4t">Close & Celebrate</h4><p data-i18n="pb.4p">Inspection, appraisal, and closing all managed, then you get your keys.</p></li>
-        </ol>
-        <ol class="steps hidden" data-proc-list="sell">
-          <li><span>01</span><h4 data-i18n="ps.1t">Home Valuation</h4><p data-i18n="ps.1p">A free local market analysis that shows what your home is really worth today.</p></li>
-          <li><span>02</span><h4 data-i18n="ps.2t">Prep & Stage</h4><p data-i18n="ps.2p">Simple improvements that return the most, plus pro photos and video.</p></li>
-          <li><span>03</span><h4 data-i18n="ps.3t">Market & Show</h4><p data-i18n="ps.3p">MLS, Zillow, social campaigns, and showings booked around your schedule.</p></li>
-          <li><span>04</span><h4 data-i18n="ps.4t">Negotiate & Close</h4><p data-i18n="ps.4p">Offers compared side by side, the best terms secured, and closing stress handled for you.</p></li>
-        </ol>
       </div>
     </section>
 
@@ -634,6 +581,97 @@
     </div>
   </div>
 
+  <!-- ============ POPUP: MEET PAMELA ============ -->
+  <div class="modal" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel modal-wide">
+      <div class="modal-head">
+        <div>
+          <span class="kicker" data-i18n="about.kicker">Meet Pamela</span>
+          <h2 id="aboutModalTitle" data-i18n="about.title">Real estate is personal. <em>So is her service.</em></h2>
+        </div>
+        <button class="modal-close" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-img">
+              <video src="assets/videos/property-1-web.mp4" poster="assets/videos/property-1-poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+            </div>
+            <div class="about-float float-1">
+              <strong data-count="homesSold">0</strong><span>+</span>
+              <small data-i18n="about.f1">families helped home</small>
+            </div>
+            <div class="about-float float-2">
+              <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+              <div><strong>Montclair, NJ</strong><small data-i18n="about.f2">Essex County expert</small></div>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <p data-i18n="about.p1">Buying or selling a home is one of the biggest decisions you will ever make. Pamela treats it that way. She answers her phone, explains every step in plain language (in English or Spanish), and negotiates like the money is her own.</p>
+            <p data-i18n="about.p2">From first-time buyers in East Orange to families moving up to Montclair and investors eyeing Newark multi-families, Pamela guides her clients across North Jersey. She covers the whole deal: pricing strategy, staging tips, lender, inspector, and attorney introductions, and a smooth closing day.</p>
+
+            <ul class="checklist">
+              <li data-i18n="about.c1">Fast replies by call, text, or WhatsApp</li>
+              <li data-i18n="about.c2">Local market data before you make any offer</li>
+              <li data-i18n="about.c3">A trusted network of lenders, inspectors, and contractors</li>
+              <li data-i18n="about.c4">Fluent in English and Spanish, so nothing gets lost in translation</li>
+            </ul>
+
+            <div class="tags" id="specialtyTags"></div>
+
+            <div class="signature">
+              <span class="sig">Pamela Espinal</span>
+              <small data-fill="title"></small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <span data-i18n="am.sub">Let&#39;s talk about your next move.</span>
+        <a href="#contact" class="btn btn-gold" data-i18n="hero.cta1">Book a Free Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ POPUP: ROADMAP ============ -->
+  <div class="modal" id="roadmapModal" role="dialog" aria-modal="true" aria-labelledby="roadmapModalTitle" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel">
+      <div class="modal-head">
+        <div>
+          <span class="kicker" data-i18n="proc.kicker">The roadmap</span>
+          <h2 id="roadmapModalTitle" data-i18n="proc.title">Simple steps. <em>Zero guesswork.</em></h2>
+        </div>
+        <button class="modal-close" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body roadmap-body">
+        <div class="seg" id="procToggle">
+          <button class="active" data-proc="buy" data-i18n="proc.buyers">For Buyers</button>
+          <button data-proc="sell" data-i18n="proc.sellers">For Sellers</button>
+        </div>
+
+        <ol class="steps" data-proc-list="buy">
+          <li><span>01</span><h4 data-i18n="pb.1t">Consultation</h4><p data-i18n="pb.1p">We talk goals, must-haves, neighborhoods, and timeline. It's free and there's no pressure.</p></li>
+          <li style="--d:.08s"><span>02</span><h4 data-i18n="pb.2t">Get Pre-Approved</h4><p data-i18n="pb.2p">Pamela connects you with trusted lenders and helps you compare FHA, VA, conventional, and more.</p></li>
+          <li style="--d:.16s"><span>03</span><h4 data-i18n="pb.3t">Tour & Offer</h4><p data-i18n="pb.3p">Curated showings, local sales data, and a winning offer strategy.</p></li>
+          <li style="--d:.24s"><span>04</span><h4 data-i18n="pb.4t">Close & Celebrate</h4><p data-i18n="pb.4p">Inspection, appraisal, and closing all managed, then you get your keys.</p></li>
+        </ol>
+        <ol class="steps hidden" data-proc-list="sell">
+          <li><span>01</span><h4 data-i18n="ps.1t">Home Valuation</h4><p data-i18n="ps.1p">A free local market analysis that shows what your home is really worth today.</p></li>
+          <li><span>02</span><h4 data-i18n="ps.2t">Prep & Stage</h4><p data-i18n="ps.2p">Simple improvements that return the most, plus pro photos and video.</p></li>
+          <li><span>03</span><h4 data-i18n="ps.3t">Market & Show</h4><p data-i18n="ps.3p">MLS, Zillow, social campaigns, and showings booked around your schedule.</p></li>
+          <li><span>04</span><h4 data-i18n="ps.4t">Negotiate & Close</h4><p data-i18n="ps.4p">Offers compared side by side, the best terms secured, and closing stress handled for you.</p></li>
+        </ol>
+      </div>
+      <div class="modal-foot">
+        <span data-i18n="rm.sub">Ready for step one? It's free.</span>
+        <a href="#contact" class="btn btn-gold" data-i18n="hero.cta1">Book a Free Consultation</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ POPUP: FAQ ============ -->
   <div class="modal" id="faqModal" role="dialog" aria-modal="true" aria-labelledby="faqModalTitle" aria-hidden="true">
     <div class="modal-backdrop" data-close></div>
@@ -672,7 +710,7 @@
       </div>
       <div>
         <h5 data-i18n="ft.explore">Explore</h5>
-        <a href="#about" data-i18n="nav.about">About</a><a href="#services" data-modal="servicesModal" data-i18n="nav.services">Services</a><a href="#areas" data-modal="areasModal" data-i18n="nav.areas">Areas</a><a href="#calculator" data-modal="calcModal" data-i18n="nav.calc">Mortgage Calculator</a><a href="#faq" data-modal="faqModal" data-i18n="nav.faq">FAQ</a>
+        <a href="#about" data-i18n="nav.about">About</a><a href="#roadmap" data-modal="roadmapModal" data-i18n="nav.roadmap">The Roadmap</a><a href="#services" data-modal="servicesModal" data-i18n="nav.services">Services</a><a href="#areas" data-modal="areasModal" data-i18n="nav.areas">Areas</a><a href="#calculator" data-modal="calcModal" data-i18n="nav.calc">Mortgage Calculator</a><a href="#faq" data-modal="faqModal" data-i18n="nav.faq">FAQ</a>
       </div>
       <div>
         <h5 data-i18n="ft.contact">Contact</h5>

@@ -17,6 +17,7 @@
 
   const photo = $("#agentPhoto");
   if (photo && A.photo) photo.src = A.photo;
+  $$("[data-photo]").forEach(i => { if (A.photo) i.src = A.photo; else i.remove(); });
 
   /* ---------- Contact links ---------- */
   const waText = encodeURIComponent("Hi Pamela! I found your website and I'd love to talk about real estate.");
@@ -286,6 +287,7 @@ Phone: ${f.get("phone")}${f.get("email") ? "\nEmail: " + f.get("email") : ""}${f
     openModalEl = m;
     m.querySelector(".modal-body").scrollTop = 0;
     m.querySelector(".modal-close").focus({ preventScroll: true });
+    m.querySelectorAll("video").forEach(v => v.play().catch(() => {}));
     // the map lives in a hidden popup, so build it the first time the popup opens
     if (id === "areasModal") {
       if (!map) { initMap(); selectArea(0, false); }
@@ -295,6 +297,7 @@ Phone: ${f.get("phone")}${f.get("email") ? "\nEmail: " + f.get("email") : ""}${f
   function closeModal(restoreFocus = true) {
     if (!openModalEl) return;
     openModalEl.classList.remove("open"); openModalEl.setAttribute("aria-hidden", "true");
+    openModalEl.querySelectorAll("video").forEach(v => v.pause());
     document.body.classList.remove("modal-open");
     openModalEl = null;
     if (restoreFocus && lastFocus) lastFocus.focus({ preventScroll: true });
@@ -325,7 +328,7 @@ Phone: ${f.get("phone")}${f.get("email") ? "\nEmail: " + f.get("email") : ""}${f
     }
   });
   // deep links: site.com/#faq opens the FAQ popup
-  const hashModal = { "#services": "servicesModal", "#areas": "areasModal", "#faq": "faqModal", "#calculator": "calcModal" };
+  const hashModal = { "#roadmap": "roadmapModal", "#services": "servicesModal", "#areas": "areasModal", "#faq": "faqModal", "#calculator": "calcModal" };
   if (hashModal[location.hash]) setTimeout(() => openModal(hashModal[location.hash]), 300);
 
   /* ---------- Launch cards: counts + preview pills come from the popups ---------- */

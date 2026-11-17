@@ -6,7 +6,7 @@
     "nav.about": "Sobre mí", "nav.services": "Servicios", "nav.areas": "Áreas", "nav.calc": "Calculadora Hipotecaria",
     "nav.faq": "Preguntas", "nav.contact": "Contacto", "nav.call": "Llamar a Pamela", "nav.email": "Escríbele a Pamela",
     "nav.home": "Inicio", "nav.explore": "Explorar", "nav.everything": "Todo lo que necesitas", "nav.roadmap": "El Camino", "nav.track": "Historial", "nav.clients": "Clientes",
-    "nd.svc": "Comprar, vender, mudarte, invertir", "nd.areas": "Mapa interactivo de sus pueblos", "nd.calc": "Pagos, préstamos y costos de cierre NJ", "nd.faq": "Respuestas rápidas para compradores y vendedores",
+    "am.sub": "Hablemos de tu próximo paso.", "nd.road": "Paso a paso para compradores y vendedores", "rm.sub": "¿Listo para el primer paso? Es gratis.", "nd.svc": "Comprar, vender, mudarte, invertir", "nd.areas": "Mapa interactivo de sus pueblos", "nd.calc": "Pagos, préstamos y costos de cierre NJ", "nd.faq": "Respuestas rápidas para compradores y vendedores",
 
     "hero.eyebrow": "eXp Realty · Montclair, NJ",
     "hero.title": "Tu próximo capítulo en <em>New Jersey</em> empieza con la agente correcta.",
