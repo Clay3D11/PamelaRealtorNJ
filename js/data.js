@@ -13,7 +13,7 @@ window.AGENT = {
   title: "Licensed Real Estate Salesperson",
   brokerage: "eXp Realty",
   license: "Licensed in New Jersey",         // VERIFY - add her NJ license # if she wants it shown
-  photo: "assets/img/pamela.jpg",            // drop her headshot here (portrait, ~800x1000)
+  photo: "assets/img/pamela.jpg",             // her headshot (converted from pam.jpg, which is HEIC)
 
   /* Contact. phone = calls. mobile = texts. whatsapp = digits only.
      Leave mobile / whatsapp / email empty and those buttons hide themselves. */
