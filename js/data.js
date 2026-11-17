@@ -15,13 +15,9 @@ window.AGENT = {
   license: "Licensed in New Jersey",         // VERIFY - add her NJ license # if she wants it shown
   photo: "assets/img/pamela.jpg",             // her headshot (converted from pam.jpg, which is HEIC)
 
-  /* Contact. phone = calls. mobile = texts. whatsapp = digits only.
-     Leave mobile / whatsapp / email empty and those buttons hide themselves. */
-  phone: "(866) 201-6210",                   // VERIFY - eXp Realty main line from the directory; use her cell
-  phoneRaw: "+18662016210",
-  mobile: "",                                 // her cell, e.g. "+19735551234" - turns on Text buttons
-  whatsapp: "",                               // e.g. "19735551234" - turns on WhatsApp buttons
-  email: "",                                  // e.g. "pamela@gmail.com" - powers the nav Gmail button + Email option in the form
+  /* Contact: email only (the phone number is intentionally not shown on the site).
+     Every Email button opens a Gmail message to this address, and the contact form sends here. */
+  email: "pamela.espinalrealty@gmail.com",
   zillow: "https://www.zillow.com/profile/Pamela%20espinal5",
   instagram: "",                              // optional full URL
   facebook: "",                               // optional full URL
