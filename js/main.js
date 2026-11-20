@@ -5,7 +5,7 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const t = (k, fb) => (window.I18N ? I18N.t(k, fb) : fb);
   const money = n => "$" + Math.round(n).toLocaleString("en-US");
-  const fullAddr = `${A.office.street}, ${A.office.city}, ${A.office.state} ${A.office.zip}`;
+  const fullAddr = [A.office.street, A.office.city, `${A.office.state} ${A.office.zip}`].filter(Boolean).join(", ");
 
   /* ---------- Fill simple fields ---------- */
   const fills = {

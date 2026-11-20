@@ -8,7 +8,7 @@
     "nav.home": "Inicio", "nav.explore": "Explorar", "nav.everything": "Todo lo que necesitas", "nav.roadmap": "El Camino", "nav.track": "Historial", "nav.clients": "Clientes",
     "am.sub": "Hablemos de tu próximo paso.", "nd.road": "Paso a paso para compradores y vendedores", "rm.sub": "¿Listo para el primer paso? Es gratis.", "nd.svc": "Comprar, vender, mudarte, invertir", "nd.areas": "Mapa interactivo de sus pueblos", "nd.calc": "Pagos, préstamos y costos de cierre NJ", "nd.faq": "Respuestas rápidas para compradores y vendedores",
 
-    "hero.eyebrow": "eXp Realty · Montclair, NJ",
+    "hero.eyebrow": "REAL · Fairfield, NJ",
     "hero.title": "Tu próximo capítulo en <em>New Jersey</em> empieza con la agente correcta.",
     "hero.lead": "Pamela Espinal ayuda a familias a comprar, vender e invertir en el norte de New Jersey, desde Montclair y Bloomfield hasta Newark y los Oranges. Habla inglés y español, conoce cada vecindario cuadra por cuadra y te acompaña hasta que tengas las llaves en la mano.",
     "hero.cta1": "Agenda una Consulta Gratis", "hero.cta2": "Calcula Mi Pago",
@@ -57,7 +57,7 @@
     "sales.ctaB": "Ver historial de ventas ↗", "sales.ctaB2": "¿Cuánto vale mi casa?",
 
     "areas.kicker": "Dónde trabaja", "areas.title": "En todo el <em>norte de New Jersey.</em>", "areas.sub": "Toca una comunidad para verla en el mapa.", "areas.explore": "Explorar",
-    "area.Montclair": "Su base. Casas victorianas, un centro animado y tren hacia NYC.",
+    "area.Montclair": "Casas victorianas, un centro animado y tren hacia NYC.",
     "area.East Orange": "Casas uni y multifamiliares accesibles, con tren directo a Manhattan.",
     "area.Newark": "La ciudad más grande de New Jersey. Ironbound, condos nuevos y multifamiliares para inversionistas.",
     "area.Belleville": "Calles tranquilas, buen valor y acceso rápido a la Ruta 21.",

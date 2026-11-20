@@ -15,7 +15,7 @@ Everything about Pamela lives in **`js/data.js`**:
 Photo: save her headshot as `assets/img/pamela.jpg` (portrait). Until then a gold "PE" monogram shows.
 
 ## Before going live (VERIFY)
-- Phone: currently eXp Realty's main line (866) 201-6210 from a public NJ directory. Swap in her cell
+- Phone: currently (866) 201-6210, eXp Realty's main line (her old brokerage) from a public NJ directory. Swap in her cell
 - Add `mobile` / `whatsapp` / `email` so the Text, WhatsApp, and Email options appear
 - Homes sold and years licensed (currently hidden), plus her NJ license # if she wants it shown
 - Confirm the Zillow link is her New Jersey profile

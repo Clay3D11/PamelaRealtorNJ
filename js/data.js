@@ -3,7 +3,7 @@
    Everything on the page (stats, areas, sales, reviews, contact links)
    is rendered from this object, so you never have to touch the HTML.
 
-   Source: public NJ agent directory (eXp Realty LLC, Montclair office) and
+   Source: public NJ agent directory (originally an eXp listing; brokerage updated to REAL, Fairfield office, per the owner) and
    public listing pages. Items marked  VERIFY  could not be confirmed
    automatically; check them with Pamela before going live.
    ========================================================================== */
@@ -11,7 +11,7 @@ window.AGENT = {
   firstName: "Pamela",
   lastName: "Espinal",
   title: "Licensed Real Estate Salesperson",
-  brokerage: "eXp Realty",
+  brokerage: "REAL",
   license: "Licensed in New Jersey",         // VERIFY - add her NJ license # if she wants it shown
   photo: "assets/img/pamela.jpg",             // her headshot (converted from pam.jpg, which is HEIC)
 
@@ -23,13 +23,13 @@ window.AGENT = {
   facebook: "",                               // optional full URL
 
   office: {
-    name: "eXp Realty",
-    street: "28 Valley Rd",
-    city: "Montclair",
+    name: "REAL",
+    street: "",                                 // VERIFY - add REAL's Fairfield office street address
+    city: "Fairfield",
     state: "NJ",
-    zip: "07042",
-    lat: 40.8166,
-    lng: -74.2186,
+    zip: "07004",
+    lat: 40.8837,
+    lng: -74.3060,
     hours: [
       ["Mon - Fri", "9:00 AM - 6:00 PM"],
       ["Saturday", "10:00 AM - 4:00 PM"],
@@ -51,7 +51,7 @@ window.AGENT = {
   /* tax = approximate 2025 effective property tax rate (%), used by the calculator's town picker.
      VERIFY with the town tax office; null = not in the picker until a rate is added. */
   areas: [
-    { name: "Montclair",   lat: 40.8259, lng: -74.2090, tax: 2.16, note: "Home base. Victorian homes, a lively downtown, and train service toward NYC." },
+    { name: "Montclair",   lat: 40.8259, lng: -74.2090, tax: 2.16, note: "Victorian homes, a lively downtown, and train service toward NYC." },
     { name: "East Orange", lat: 40.7673, lng: -74.2049, tax: 2.89, note: "Affordable single and multi-family homes with direct trains to Manhattan." },
     { name: "Newark",      lat: 40.7357, lng: -74.1724, tax: 1.85, note: "New Jersey's largest city. Ironbound, new condos, and investor-friendly multi-families." },
     { name: "Belleville",  lat: 40.7937, lng: -74.1501, tax: 2.71, note: "Quiet streets, solid value, and quick access to Route 21." },
